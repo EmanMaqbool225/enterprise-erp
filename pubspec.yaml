@@ -1,0 +1,78 @@
+name: enterprise_erp
+description: نظام محاسبي وإداري مؤسسي متكامل لتجارة الموز بالجملة
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.2.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+  
+  # التعريب وتنسيق الأرقام والتواريخ
+  intl: ^0.19.0
+
+  # إدارة الحالة وحقن الاعتماديات
+  flutter_riverpod: ^2.4.9
+
+  # التوجيه والتنقل بين الشاشات
+  go_router: ^13.2.0
+
+  # قاعدة البيانات المحلية (SQLite)
+  drift: ^2.14.1
+  sqlite3_flutter_libs: ^0.5.20
+  path_provider: ^2.1.2
+  path: ^1.9.0
+
+  # واجهة المستخدم والهوية البصرية
+  google_fonts: ^6.1.0
+
+  # الأمان وحماية الأسرار
+  flutter_secure_storage: ^9.0.0
+  
+  # النسخ الاحتياطي والملفات
+  archive: ^3.4.9
+  google_sign_in: ^6.2.1
+  googleapis: ^15.0.0
+
+  # التكامل مع WhatsApp
+  url_launcher: ^6.3.2
+
+  # الطباعة وتوليد كشوفات الحساب (PDF)
+  pdf: ^3.10.8
+  printing: ^5.12.0
+
+  # الخادم المحلي (لإنشاء API على Windows)
+  shelf: ^1.4.1
+  shelf_router: ^1.1.4
+
+  # الاتصال بالشبكة (لتطبيق الهاتف أثناء المزامنة)
+  dio: ^5.4.1
+  file_picker: ^11.0.3
+  googleapis_auth: ^2.0.0
+  http: ^1.6.0
+  fl_chart: ^0.69.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  build_runner: ^2.4.8
+  drift_dev: ^2.14.1
+  flutter_lints: ^3.0.0
+  flutter_launcher_icons: "^0.13.1"
+
+flutter:
+  uses-material-design: true
+  
+flutter_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/icon/app_icon2.png"
+  windows:
+    generate: true
+    image_path: "assets/icon/app_icon2.png"
+    icon_size: 256
+  
